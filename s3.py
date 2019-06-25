@@ -13,7 +13,6 @@ def push_to_s3(filename, contents):
     # Parameterized for testing.
     # Should this be a setting rather than a hardcoded string?
     s3_bucket = "membership.texastribune.org"
-    breakpoint()
     # Create an S3 client, gives you lowest level access to S3 control
     s3_client = boto3.client(
         "s3",

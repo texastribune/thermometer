@@ -26,6 +26,7 @@ def push_to_s3(filename, contents):
     #             Set compression
     s3_client.put_object(
         ACL="public-read",
+        CacheControl="no-cache",
         Body=json.dumps(contents, indent=2),
         Bucket=s3_bucket,
         Key=filename,

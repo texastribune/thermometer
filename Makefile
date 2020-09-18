@@ -10,5 +10,5 @@ interactive: build
 		--volume=$$(pwd):/app \
 		--env-file=env \
 		--rm --interactive --tty \
-		--entrypoint=bash \
+		--entrypoint=sh \
 		--name=${APP} ${NS}/${APP}

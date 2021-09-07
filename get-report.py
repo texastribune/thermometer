@@ -13,4 +13,4 @@ content = json.loads(resp.text)
 print(content)
 the_good_stuff = content["factMap"]["T!T"]["aggregates"][3]
 print(the_good_stuff)
-push_to_s3(filename="fmd2020.json", contents=the_good_stuff)
+push_to_s3(filename="fmd2021.json", contents=the_good_stuff)

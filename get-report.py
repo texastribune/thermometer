@@ -6,7 +6,7 @@ from s3 import push_to_s3
 
 sf = SalesforceConnection()
 
-path = "/services/data/v46.0/analytics/reports/00O6f000007rrXfEAI"
+path = "/services/data/v46.0/analytics/reports/00O6f00000874N2EAI"
 url = "{}{}".format(sf.instance_url, path)
 resp = requests.get(url, headers=sf.headers)
 content = json.loads(resp.text)

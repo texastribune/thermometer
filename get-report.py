@@ -11,6 +11,6 @@ url = "{}{}".format(sf.instance_url, path)
 resp = requests.get(url, headers=sf.headers)
 content = json.loads(resp.text)
 print(content)
-the_good_stuff = content["factMap"]["T!T"]["aggregates"][0]
+the_good_stuff = content["factMap"]["T!T"]["aggregates"][0] # change this to 3 for SMD/FMD
 print(the_good_stuff)
 push_to_s3(filename="gtd2022.json", contents=the_good_stuff)

@@ -6,11 +6,11 @@ from s3 import push_to_s3
 
 sf = SalesforceConnection()
 
-path = "/services/data/v46.0/analytics/reports/00O6f000007udDgEAI"
+path = "/services/data/v46.0/analytics/reports/00O6f000007v2YZEAY"
 url = "{}{}".format(sf.instance_url, path)
 resp = requests.get(url, headers=sf.headers)
 content = json.loads(resp.text)
 print(content)
-the_good_stuff = content["factMap"]["T!T"]["aggregates"][0] # change this to 3 for SMD/FMD
+the_good_stuff = content["factMap"]["T!T"]["aggregates"][3] # change this to 0 for Giving Tuesday
 print(the_good_stuff)
-push_to_s3(filename="gtd2022.json", contents=the_good_stuff)
+push_to_s3(filename="smd2023.json", contents=the_good_stuff)

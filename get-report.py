@@ -14,7 +14,8 @@ filename = "smd2023.json"
 url = "{}{}".format(sf.instance_url, path)
 resp = requests.get(url, headers=sf.headers)
 content = json.loads(resp.text)
-print(content)
+print('Content loaded')
 the_good_stuff = content["factMap"]["T!T"]["aggregates"][array_index]
-print(the_good_stuff)
+
 push_to_s3(filename=filename, contents=the_good_stuff)
+print('File pushed to S3')

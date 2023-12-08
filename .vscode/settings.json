@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "fmd",
-        "giving-tuesday"
+        "giving-tuesday",
+        "eoy"
     ]
 }

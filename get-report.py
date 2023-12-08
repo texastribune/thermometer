@@ -8,8 +8,8 @@ sf = SalesforceConnection()
 
 # set array_index to 0 for Giving Tuesday report and 3 for SMD/FMD report
 array_index = 0
-path = "/services/data/v46.0/analytics/reports/00OPe000002v9IUMAY"
-filename = "gt2023.json"
+path = "/services/data/v46.0/analytics/reports/00OPe000002xWXQMA2"
+filename = "eoy2023.json"
 
 url = "{}{}".format(sf.instance_url, path)
 resp = requests.get(url, headers=sf.headers)

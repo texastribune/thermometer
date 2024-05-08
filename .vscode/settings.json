@@ -1,8 +1,9 @@
 {
-    "conventionalCommits.scopes": [
-        "fmd",
-        "giving-tuesday",
-        "eoy",
-        "reporting-fund"
-    ]
+  "conventionalCommits.scopes": [
+    "fmd",
+    "giving-tuesday",
+    "eoy",
+    "reporting-fund",
+    "smd"
+  ]
 }

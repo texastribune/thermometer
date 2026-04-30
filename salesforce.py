@@ -18,8 +18,9 @@ class SalesforceConnection(object):
                 'client_id': os.environ['SALESFORCE_CLIENT_ID'],
                 'client_secret': os.environ['SALESFORCE_CLIENT_SECRET'],
                 'username': os.environ['SALESFORCE_USERNAME'],
-                'password': '{0}{1}'.format(os.environ['SALESFORCE_PASSWORD'],
-                    os.environ['SALESFORCE_TOKEN']),
+                # 'password': '{0}{1}'.format(os.environ['SALESFORCE_PASSWORD'],
+                #     os.environ['SALESFORCE_TOKEN']),
+                'password': os.environ['SALESFORCE_PASSWORD'],
                 }
         token_path = '/services/oauth2/token'
         url = '{0}://{1}{2}'.format('https', os.environ['SALESFORCE_HOST'],
